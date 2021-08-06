@@ -21,7 +21,7 @@ class SELabTest {
 
     @Test
     void testWidth() {
-        assertEquals(rectangle.width, width);
+        assertEquals(rectangle.getWidth(), width);
     }
 
     @Test
