@@ -10,4 +10,9 @@ public class Square {
     public int getSide() {
         return side;
     }
+
+    public int computeArea() {
+        return side * side;
+    }
+
 }
