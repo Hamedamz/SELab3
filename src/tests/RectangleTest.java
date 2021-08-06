@@ -42,4 +42,9 @@ class SELabTest {
         rectangle.setHeight(height);
         assertEquals(rectangle.getHeight(), height);
     }
+
+    @Test
+    void testArea() {
+        assertEquals(rectangle.computeArea(), width * height);
+    }
 }
