@@ -1,6 +1,6 @@
 package shapes;
 
-public class Square {
+public class Square implements Shape{
     private int side;
 
     public Square(int side) {
@@ -11,6 +11,7 @@ public class Square {
         return side;
     }
 
+    @Override
     public int computeArea() {
         return side * side;
     }
