@@ -12,4 +12,11 @@ public class SquareTest {
         Square square = new Square(side);
         assertEquals(square.getSide(), side);
     }
+
+    @Test
+    void testArea() {
+        int side = 6;
+        Square square = new Square(side);
+        assertEquals(square.computeArea(), side * side);
+    }
 }
