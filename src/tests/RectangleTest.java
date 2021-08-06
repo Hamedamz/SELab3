@@ -1,5 +1,6 @@
 package tests;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import shapes.Rectangle;
@@ -7,23 +8,24 @@ import shapes.Rectangle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SELabTest {
+    Rectangle rectangle;
+    int height;
+    int width;
+
+    @BeforeEach
+    void setup() {
+        height = 4;
+        width = 6;
+        rectangle = new Rectangle(width, height);
+    }
+
     @Test
     void testWidth() {
-        int width = 6;
-        int height = 4;
-
-        Rectangle rectangle = new Rectangle(width, height);
-
         assertEquals(rectangle.width, width);
     }
 
     @Test
     void testHeight() {
-        int width = 6;
-        int height = 4;
-
-        Rectangle rectangle = new Rectangle(width, height);
-
         assertEquals(rectangle.height, height);
     }
 }
