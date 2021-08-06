@@ -16,4 +16,14 @@ class SELabTest {
 
         assertEquals(rectangle.width, width);
     }
+
+    @Test
+    void testHeight() {
+        int width = 6;
+        int height = 4;
+
+        Rectangle rectangle = new Rectangle(width, height);
+
+        assertEquals(rectangle.height, height);
+    }
 }
