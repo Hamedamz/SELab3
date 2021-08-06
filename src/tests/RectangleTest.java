@@ -28,4 +28,11 @@ class SELabTest {
     void testHeight() {
         assertEquals(rectangle.getHeight(), height);
     }
+
+    @Test
+    void testSetWidth() {
+        int width = 12;
+        rectangle.setWidth(width);
+        assertEquals(rectangle.getWidth(), width);
+    }
 }
