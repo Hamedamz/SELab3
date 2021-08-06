@@ -7,7 +7,7 @@ import shapes.Rectangle;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SELabTest {
+class RectangleTest {
     Rectangle rectangle;
     int height;
     int width;
