@@ -26,6 +26,6 @@ class SELabTest {
 
     @Test
     void testHeight() {
-        assertEquals(rectangle.height, height);
+        assertEquals(rectangle.getHeight(), height);
     }
 }
