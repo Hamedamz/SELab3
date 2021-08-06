@@ -24,4 +24,8 @@ public class Rectangle {
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public int computeArea() {
+        return width * height;
+    }
 }
