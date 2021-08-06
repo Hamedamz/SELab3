@@ -11,6 +11,10 @@ public class Square implements Shape{
         return side;
     }
 
+    public void setSide(int side) {
+        this.side = side;
+    }
+
     @Override
     public int computeArea() {
         return side * side;
